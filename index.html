@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/c1.css">
+</head>
+<body>
+    <header id="header"> </header>
+    <nav id="menu"> 
+    </nav>
+    <main> 
+        <section id="listdulich">
+            <h2>Danh sách du lịch </h2>
+            <div id="data"></div>
+        </section>
+
+        <section id="trongnuoc-list">
+            <h2>Khu du lịch trong nước</h2>
+            <div id="data"></div> <!-- Phần chứa dữ liệu cho khu du lịch trong nước -->
+        </section>
+    
+        <!-- Danh sách khu du lịch ngoài nước -->
+        <section id="ngoainuoc-list">
+            <h2>Khu du lịch ngoài nước</h2>
+            <div id="data"></div> <!-- Phần chứa dữ liệu cho khu du lịch ngoài nước -->
+        </section>
+
+    </main>
+
+        <footer>
+            <div class="container">
+                <div class="column">
+                    <h4>Liên kết nhanh</h4>
+                    <a href="#">Trang chủ</a>
+                    <a href="#">Giới thiệu</a>
+                    <a href="#">Dịch vụ</a>
+                    <a href="#">Liên hệ</a>
+                </div>
+                <div class="column">
+                    <h4>Thông tin liên hệ</h4>
+                    <p>Công ty TNHH XYZ</p>
+                    <p>Địa chỉ: 123 Đường ABC, TP. Hồ Chí Minh</p>
+                    <p>Điện thoại: <a href="tel:0123456789">0123456789</a></p>
+                    <p>Email: <a href="mailto:info@xyz.com">info@xyz.com</a></p>
+                </div>
+                <div class="column">
+                    <h4>Chứng nhận</h4>
+                    <img src="img/certificate.png" alt="Chứng nhận" style="width: 100%; max-width: 150px;">
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2024 Công ty TNHH XYZ. Bảo lưu mọi quyền.</p>
+            </div>
+        </footer>
+</body>
+</html>
+<script src="js/menu.js"></script>
+<script type="module">
+   import { showlistkhudulich } from './js/app.js';
+   document.querySelector("#listdulich #data").innerHTML = await showlistkhudulich();
+   document.querySelector("#menu").innerHTML= code_menu();
+   document.querySelector("#header").innerHTML= code_header();
+   
+  
+
+</script>

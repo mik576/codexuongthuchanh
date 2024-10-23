@@ -1,0 +1,196 @@
+* { margin:0; padding:0 ; box-sizing: border-box;}
+a { text-decoration: none;}
+html { scroll-behavior: smooth;  }
+#header {
+    display: flex; /* Sử dụng Flexbox */
+    justify-content: space-between; /* Đẩy nội dung ở hai đầu */
+    align-items: center; /* Căn giữa nội dung theo chiều dọc */
+    background-color: lightgoldenrodyellow; /* Màu nền */
+    padding: 20px; /* Padding cho header */
+    border-bottom: 2px solid #d9d9d9; /* Đường viền dưới */
+}
+
+.navbar {
+    display: flex; /* Sử dụng Flexbox cho navbar */
+    justify-content: space-between; /* Đẩy nội dung ở hai đầu */
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+}
+
+.sodienthoai {
+    display: flex; /* Sử dụng Flexbox cho sodienthoai */
+    align-items: center; /* Căn giữa nội dung theo chiều dọc */
+}
+
+.ngonngu {
+    margin-left: 31cm; /* Đẩy ngonngu về bên phải */
+    display: flex; /* Sử dụng Flexbox cho ngonngu */
+    align-items: center; /* Căn giữa nội dung theo chiều dọc */
+}
+
+#header a {
+    color: rgb(216, 14, 14); /* Màu chữ cho liên kết */
+    transition: color 0.3s ease; /* Hiệu ứng chuyển màu */
+    margin-left: 20px; /* Thêm khoảng cách giữa các liên kết */
+}
+
+#header a:hover {
+    color: aqua; /* Màu chữ khi hover */
+    text-decoration: underline; /* Gạch chân khi hover */
+}
+
+
+
+
+#menu { 
+    background-color: orange; height:60px; line-height: 60px;text-align: center;
+    position: sticky; top:0; left:0
+}
+#menu li { list-style: none; display: inline-block; margin:auto 10px}
+#menu a { font-size: 1.2em; color:rgb(216, 14, 14)}
+#menu a:hover { color:aqua; text-decoration: underline;} 
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  ul li {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  .submenu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Đặt submenu dưới mục cha */
+    left: 50%; /* Đặt submenu bắt đầu từ giữa */
+    transform: translateX(-50%); /* Căn giữa submenu theo trục X */
+    background-color: #f1f1f1;
+    min-width: 160px;
+    z-index: 1000; /* Đảm bảo submenu nằm trên các phần tử khác */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tạo bóng cho menu */
+  }
+
+  ul li:hover .submenu {
+    display: block;
+  }
+
+  .submenu li {
+    display: block;
+  }
+
+  .submenu li a {
+    padding: 10px;
+    display: block;
+    text-align: left; /* Căn văn bản bên trái cho dễ đọc */
+    color: #333;
+    text-decoration: none;
+  }
+
+  .submenu li a:hover {
+    background-color: #ddd; /* Thêm hiệu ứng hover */
+  }
+
+h2 {
+    display: block; /* Đảm bảo h2 được hiển thị */
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+#listdulich { background-color: lightcyan; padding:40px 0}
+#listdulich h2 { text-align: center; text-transform: uppercase; }
+#listdulich #data { 
+    display: flex; 
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+}
+#listdulich #data > div { 
+    width: 30%; border: 1px solid black ; 
+    margin: 15px 0.5%; 
+    text-align: center; 
+    font-size: 1.1em; 
+    border-radius: 5px; 
+    box-shadow: 2px 2px 2px black; 
+}
+#listdulich #data > div > img { width: 87% ; height: 200px}
+#listdulich #data > div > p {  margin: 15px; }
+
+#trongnuoc-list, #ngoainuoc-list { 
+    background-color: rgb(196, 231, 231); 
+    padding: 40px 0; 
+}
+
+#trongnuoc-list h2, #ngoainuoc-list h2 { 
+    text-align: center; 
+    text-transform: uppercase; 
+}
+
+#trongnuoc-list #data, #ngoainuoc-list #data { 
+    display: flex; 
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+}
+
+#trongnuoc-list #data > div, #ngoainuoc-list #data > div { 
+    width: 30%; 
+    border: 1px solid black; 
+    margin: 15px 0.5%; 
+    text-align: center; 
+    font-size: 1.1em; 
+    border-radius: 5px; 
+    box-shadow: 2px 2px 2px black; 
+}
+
+#trongnuoc-list #data > div > img, #ngoainuoc-list #data > div > img { 
+    width: 87%; 
+    height: 200px; 
+}
+
+#trongnuoc-list #data > div > p, #ngoainuoc-list #data > div > p { 
+    margin: 15px; 
+}
+
+
+
+footer { 
+    background-color: #333; /* Màu nền tối cho footer */
+    color: white; /* Màu chữ trắng */
+    padding: 20px 0; /* Khoảng cách trên và dưới cho footer */
+    text-align: center; /* Căn giữa nội dung trong footer */
+}
+
+footer .container { 
+    max-width: 1200px; /* Giới hạn chiều rộng cho footer */
+    margin: 0 auto; /* Căn giữa */
+    display: flex; /* Sử dụng flexbox để căn chỉnh các mục */
+    flex-wrap: wrap; /* Cho phép các mục xuống dòng */
+    justify-content: space-around; /* Căn giữa các mục trong container */
+}
+
+footer .column { 
+    flex: 1; /* Chiếm diện tích đều trong footer */
+    min-width: 200px; /* Chiều rộng tối thiểu cho mỗi cột */
+    padding: 10px; /* Khoảng cách giữa các mục */
+}
+
+footer h4 {
+    margin-bottom: 10px; /* Khoảng cách dưới tiêu đề cột */
+}
+
+footer a { 
+    color: white; /* Màu chữ cho liên kết */
+    margin: 5px 0; /* Khoảng cách giữa các liên kết */
+    text-decoration: none; /* Bỏ gạch chân cho liên kết */
+    display: block; /* Để mỗi liên kết chiếm một dòng */
+}
+
+footer a:hover { 
+    text-decoration: underline; /* Gạch chân khi hover */
+    color: #ffcc00; /* Thay đổi màu chữ khi hover */
+}
+
+footer .copyright { 
+    margin-top: 20px; /* Khoảng cách trên cho bản quyền */
+    font-size: 0.8em; /* Kích thước chữ nhỏ hơn cho bản quyền */
+}
